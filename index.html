@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type=text/css a href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <body background="assets/images/mapBackground.jpg">  
+
+       
+<div class = "container">
+    <div id = "timer"><div class= "values">
+    <h2>Seconds left: <span id = "timeLeft"></span></h2> 
+    </div>
+    </div>
+
+<div id = "buttons">
+    <button id="start">Click to Start</button>
+</div>
+
+<div id = "quiz"></div><h2>State Capitals Quiz</h2></div>
+<div id = "questions" style="display: none">
+    <form>  
+        <fieldset>
+            <legend>What's the capital of Florida?</legend>
+    
+            <div>
+                <input type="radio" ans="miami" name="q0" />
+                <label for="miami">Miami</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="orlando" name="q0" />
+                <label for="orlando">Orlando</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="tallahassee" name="q0" />
+                <label for="tallahassee">Tallahassee</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>What's the capital of Georgia?</legend>
+    
+            <div>
+                <input type="radio" ans="macon" name="q1" />
+                <label for="macon">Macon</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="valdosta" name="q1" />
+                <label for="valdosta">Valdosta</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="atlanta" name="q1" />
+                <label for="atlanta">Atlanta</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Michigan?</legend>
+    
+            <div>
+                <input type="radio" ans="lansing" name="q2" />
+                <label for="lansing">Lansing</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="detroit" name="q2" />
+                <label for="detroit">Detroit</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="flint" name="q2" />
+                <label for="flint">Flint</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Wisconsin?</legend>
+    
+            <div>
+                <input type="radio" ans="milwaukee" name="q3" />
+                <label for="milwaukee">Milwaukee</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="madison" name="q3" />
+                <label for="madison">Madison</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="greenBay" name="q3" />
+                <label for="greenBay">Green Bay</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Missouri?</legend>
+    
+            <div>
+                <input type="radio" ans="stLouis" name="q4" />
+                <label for="stLouis">St. Louis</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="kansasCity" name="q4" />
+                <label for="kansasCity">Kansas City</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="jeffersonCity" name="q4" />
+                <label for="jeffersonCity">Jefferson City</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Idaho?</legend>
+    
+            <div>
+                <input type="radio" ans="twinFalls" name="q5" />
+                <label for="twinFalls">Twin Falls</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="coeurDAlene" name="q5" />
+                <label for="coeurDAlene">Coeur D'Alene</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="boise" name="q5" />
+                <label for="boise">Boise</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Vermont?</legend>
+    
+            <div>
+                <input type="radio" ans="montpelier" name="q6" />
+                <label for="montpelier">Montpelier</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="greensboro" name="q6" />
+                <label for="greensboro">Greensboro</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="woodstock" name="q6" />
+                <label for="woodstock">Woodstock</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Nebraska?</legend>
+    
+            <div>
+                <input type="radio" ans="omaha" name="q7" />
+                <label for="omaha">Omaha</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="lincoln" name="q7" />
+                <label for="lincoln">Lincoln</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="norfolk" name="q7" />
+                <label for="norfolk">Norfolk</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of Washington?</legend>
+    
+            <div>
+                <input type="radio" ans="seattle" name="q8" />
+                <label for="seattle">Seattle</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="spokane" name="q8" />
+                <label for="spokane">Spokane</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="olympia" name="q8" />
+                <label for="olympia">Olympia</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's the capital of New Mexico?</legend>
+    
+            <div>
+                <input type="radio" ans="santaFe" name="q9" />
+                <label for="santaFe">Santa Fe</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="albuquerque" name="q9" />
+                <label for="albuquerque">Albuquerque</label>
+            </div>
+    
+            <div>
+                <input type="radio" ans="roswell" name="q9" />
+                <label for="roswell">Roswell</label>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-default" id="submit">Submit</button>
+    </form>
+</div>        
+    <div id="end" style="display: none">
+        Time's up!
+        <br>
+    <p>Correct: <span id="correct"></span></p> 
+    <p>Wrong: <span id="wrong"></span> </p>  
+    <p>Unanswered: <span id="unanswered"></span></p>  
+    </div>
+</div>
+</body>
+</html>

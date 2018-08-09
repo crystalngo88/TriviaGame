@@ -1,0 +1,41 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: saddlebrown;
+    font-size: 20px;
+}
+
+#start {
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#questions {
+  width: 50%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 auto 40px;
+  border: 3px solid saddlebrown;
+  font-weight: normal;
+}
+
+#submit {
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+#end {
+    text-align: center;
+    font-size: 48px;
+    /* font-weight: bold; */
+}
