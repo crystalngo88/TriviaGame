@@ -7,7 +7,7 @@ window.onload = function(){
     // timer--; // TODO: Is there a reason why this timer is still here? Doesn't seem to have been declared anywhere nor is used anywhere else
 };
 
-var timeLeft = 30;
+var timeLeft = 120;
 var correct = 0;
 var wrong = 0;
 var unanswered = 0;
@@ -49,7 +49,7 @@ $(document).on('click', '#submit', function(event){
 
     for (let i = 0; i < answers.length; i++) {
 
-        debugger;
+        // debugger;
         if($(`input[name=q${i}]:checked`).attr("ans") == answers[i]){
             correct++;
             // unanswered--;
@@ -63,24 +63,4 @@ $(document).on('click', '#submit', function(event){
         }
     }
      gameOver();
-
-
 })
-
-
-
-
-
-// var questions = ["Question: laaljfae;?", "dflhaejfihalei", ]
-// var answers = ["aljefae;", "dalfkjeaio;"]
-// var correct = ["fajeo;ijfaeo;", "ajl;dfjaioe;"]
-// questions[0].questions
-// questions[0].answers
-// questions[0].correct
-
-//     // in the element with an id of time-left add an h2 saying Time's Up!
-//     // console log done
-//     console.log("done");
-//     $("#time-left").append("<h2>Time's Up!</h2>");
-//     console.log("time is up");
-// }
